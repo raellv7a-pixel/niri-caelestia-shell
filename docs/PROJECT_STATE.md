@@ -2,13 +2,13 @@
 
 Last updated: 2026-09-15
 Current branch: bootstrap/project-foundation
-Last validated commit: (Bootstrap chore pending)
+Last validated commit: 41c53a27
 
 ## Current Milestone
-P0 — Project Foundation
+P1 — Interaction & Focus Foundation
 
 ## Current Objective
-Estabelecer a governança inicial, estrutura Git e política de documentação sem modificar código ou configuração.
+Realizar auditoria técnica de focus/click-away e fechamento de drawers e popouts no Niri.
 
 ## Known-Good State
 O ambiente de desenvolvimento está separado da instalação ativa (`~/.config`). O fork está configurado.
@@ -31,7 +31,7 @@ N/A (Nenhuma mudança de código introduzida ainda).
 - Divergência arquitetural excessiva se features forem portadas antes da base funcional (interaction/focus) estar estável.
 
 ## Next Task
-Iniciar P1 — Interaction & Focus Foundation (investigar/implementar click-away e focus handling sem quebrar o estado atual).
+Executar a investigação técnica das primitivas de focus no Niri e comportamento do HyprlandFocusGrab no Caelestia.
 
 ## Validation Status
-Ambiente e repositório Git verificados. Estrutura de remotes correta.
+P0 concluído e validado (remotes, governança e documentação canônica ativos). Auditoria técnica P1 em andamento.

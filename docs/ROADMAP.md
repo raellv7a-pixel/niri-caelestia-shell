@@ -4,13 +4,13 @@ Este documento define a direção futura, milestones e as decisões arquiteturai
 
 ## Milestones
 
-### P0 — Project Foundation (Current)
-- Git e remotes configurados corretamente.
-- Governança e regras estabelecidas (`AGENTS.md`).
-- Documentação canônica criada.
-- Ambiente de desenvolvimento separado da instalação ativa.
+### P0 — Project Foundation (Concluído)
+- [x] Git e remotes configurados corretamente.
+- [x] Governança e regras estabelecidas (`AGENTS.md`).
+- [x] Documentação canônica criada.
+- [x] Ambiente de desenvolvimento separado da instalação ativa.
 
-### P1 — Interaction & Focus Foundation
+### P1 — Interaction & Focus Foundation (Current)
 - Estabelecer o comportamento funcional base após o bootstrap.
 - Implementar click-away e focus handling.
 - Tratar input regions.
