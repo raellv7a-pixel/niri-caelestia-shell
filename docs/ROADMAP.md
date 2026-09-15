@@ -49,3 +49,6 @@ Este documento define a direção futura, milestones e as decisões arquiteturai
 
 - **D003 — Upstream changes are ported selectively, not merged blindly.**
   *Reason:* As diferenças entre Hyprland (upstream) e Niri exigem validação semântica; merges cegos quebram a integração existente e introduzem bugs difíceis de rastrear.
+
+- **D004 — Niri interaction model must emulate HyprlandFocusGrab semantics without fullscreen overlays.**
+  *Reason:* O Niri não suporta `hyprland_focus_grab_v1`. O fechamento ao clicar fora (click-away) deve preservar o click-through nativo do Wayland (o clique atinge a janela subjacente no primeiro toque) via abstração `NiriFocusGrab` (combinando `activeChanged` de `WlrKeyboardFocus.OnDemand` e eventos `WindowFocusChanged` do IPC do Niri), rejeitando overlays fullscreen com `MouseArea` que engolem cliques.
